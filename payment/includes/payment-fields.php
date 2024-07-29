@@ -49,10 +49,10 @@
 			 * for ($y = date('Y'); $y <= date('Y') + 10; $y++)
 			 * Utilizar la funcion date limita el uso de tarjetas
 			 * emitidas en el año en curso del sistema operativo,
-			 * con un rango de 10 años se asegura el uso de tarjetas vijentes.
+			 * con un rango de 10 años se asegura el uso de tarjetas vigentes.
 			 */
 			$x = date('Y');
-			for ($y = 2022; $y <= 2022 + 10; $y++) {
+			for ($y = 2024; $y <= 2024 + 10; $y++) {
 				$selected = ($y == $x) ? 'selected' : '';
 				echo '<option value="' . $y . '" ' . $selected . '>' . $y . '</option>';
 			}
